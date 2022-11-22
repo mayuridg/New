@@ -1,0 +1,37 @@
+using System;
+namespace Solution
+{
+    class programe
+    {
+        
+        private void test1()
+        {
+            Console.WriteLine("this is a private method.");
+        }
+        internal void test2()
+        {
+            Console.WriteLine("this is a internal method.");
+        }
+        protected void test3()
+        {
+            Console.WriteLine("this is a protected method.");
+        }
+        protected internal void test4()
+        {
+            Console.WriteLine("this is a protected internal method.");
+        }
+        public void test5()
+        {
+            Console.WriteLine("this is a public method.");
+        }
+        static void Main(String[] arg)
+        {
+            programe p=new programe();
+            p.test1();
+            p.test2();
+            p.test3();
+            p.test4();
+            p.test5();
+        }
+    }
+}
