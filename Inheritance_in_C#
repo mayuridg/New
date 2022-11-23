@@ -1,0 +1,29 @@
+using System;
+
+namespace inheritancep
+{
+ public class A 
+{
+  public void fun1()
+  {
+      Console.WriteLine("this is a function 1 st");
+    
+  }
+   
+  
+}
+public class B:A 
+{
+    public void fun2()
+    {
+        Console.WriteLine("this is a function 2nd");
+    }
+    static void Main(String[] arg)
+    {
+        B b=new B();
+        b.fun1();
+        b.fun2();
+        
+    }
+}
+}
