@@ -1,0 +1,25 @@
+
+using System;
+namespace project
+{
+ public class M 
+{
+    int x;
+    public M(int p)
+    {
+       Console.WriteLine("this is a parent class constructor ");
+       Console.WriteLine("value of P is "+p);
+      
+    }
+}
+ public class HelloWorld:M {
+     public HelloWorld(int a):base(a)
+     {
+         Console.WriteLine("this is a child class constructor.");
+     }
+  static void Main() {
+   HelloWorld h=new HelloWorld(200);
+   
+  }
+}
+}
