@@ -1,0 +1,45 @@
+/******************************************************************************
+
+                            Online C# Compiler.
+                Code, Compile, Run and Debug C# program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+//Here in this programme get method is overloaded and set method is used for overriding.
+
+using System;
+namespace polymorphism
+{
+    class parent
+    {
+        public void get()   //overloading
+        {
+            Console.WriteLine("this is a parents get method");
+        }
+        public virtual void set()  //overriding requires virtual keyword for parent method.
+        {
+            Console.WriteLine("this is a parents set method");
+        }
+    }
+    class child:parent
+    {
+        public void get(int id)   //overloading
+        {
+            Console.WriteLine("this is childs get method");
+        }
+        public override void set()  //overriding requires override keyword for child method.
+        {
+            Console.WriteLine("this is childs set method.");
+        }
+        public static void Main(String[] arg)
+        {
+            child c=new child();
+            c.get();
+            c.get(20);
+            c.set();
+            c.set();
+            
+        }
+    }
+}
